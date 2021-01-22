@@ -6,7 +6,7 @@
 [![npm version](https://badge.fury.io/js/ngx-daterangepicker-material.svg)](https://badge.fury.io/js/ngx-daterangepicker-material)
 [![last commit](https://img.shields.io/github/last-commit/fetrarij/ngx-daterangepicker-material.svg)](https://github.com/fetrarij/ngx-daterangepicker-material/commits/master)
 
-This `Angular Material` plugin is compatible with Angular 2+ and is Ivy compatible. It leverages `moment.js` to handle date manipulation and parsing. The base for this plugin was originally the [Bootstrap Date Range Picker](http://www.daterangepicker.com), but its dependencies on jQuery and Bootstrap were removed. `Angular Material` themes are fully supported since v3.0.0, so you can just drop this component into an existing Material project and it will blend right into your application.
+This `Angular Material` plugin is compatible with Angular 2+ and is Ivy compatible. It leverages `_dayjs.js` to handle date manipulation and parsing. The base for this plugin was originally the [Bootstrap Date Range Picker](http://www.daterangepicker.com), but its dependencies on jQuery and Bootstrap were removed. `Angular Material` themes are fully supported since v3.0.0, so you can just drop this component into an existing Material project and it will blend right into your application.
 
 ![](screen.png)
 
@@ -130,8 +130,8 @@ You can use the component directly in your templates, which will set its `inline
     applyLabel: 'Okay', // detault is 'Apply'
     clearLabel: 'Clear', // detault is 'Clear'
     customRangeLabel: 'Custom range',
-    daysOfWeek: moment.weekdaysMin(),
-    monthNames: moment.monthsShort(),
+    daysOfWeek: _dayjs.weekdaysMin(),
+    monthNames: _dayjs.monthsShort(),
     firstDay: 1 // first day is monday
 }
 ```
@@ -158,12 +158,12 @@ the model we got would be:  `{start: Date, end: Date}`
 ```
 ```javascript
 ranges: any = {
-    'Today': [moment(), moment()],
-    'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-    'Last 7 Days': [moment().subtract(6, 'days'), moment()],
-    'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-    'This Month': [moment().startOf('month'), moment().endOf('month')],
-    'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+    'Today': [_dayjs(), _dayjs()],
+    'Yesterday': [_dayjs().subtract(1, 'days'), _dayjs().subtract(1, 'days')],
+    'Last 7 Days': [_dayjs().subtract(6, 'days'), _dayjs()],
+    'Last 30 Days': [_dayjs().subtract(29, 'days'), _dayjs()],
+    'This Month': [_dayjs().startOf('month'), _dayjs().endOf('month')],
+    'Last Month': [_dayjs().subtract(1, 'month').startOf('month'), _dayjs().subtract(1, 'month').endOf('month')]
   }
 ```
 #### Other options with ranges

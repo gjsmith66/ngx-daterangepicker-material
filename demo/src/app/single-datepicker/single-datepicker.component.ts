@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import * as moment from 'moment';
-import 'moment/locale/fr';
+import * as _dayjs from 'dayjs';
 import { LocaleConfig } from '../../../../src/daterangepicker';
-// moment.locale('fr', localization);
+// _dayjs.locale('fr', localization);
+import * as weekday from 'dayjs/plugin/weekday';
+_dayjs.extend(weekday)
 
 @Component({
   selector: 'single-datepicker',
@@ -10,13 +11,13 @@ import { LocaleConfig } from '../../../../src/daterangepicker';
   styleUrls: ['./single-datepicker.component.scss']
 })
 export class SingleDatepickerComponent implements OnInit {
-  selected = moment();
+  selected = _dayjs();
   locale: LocaleConfig = {
     applyLabel: 'Appliquer',
     customRangeLabel: ' - ',
-    daysOfWeek: moment.weekdaysMin(),
-    monthNames: moment.monthsShort(),
-    firstDay: moment.localeData().firstDayOfWeek(),
+    daysOfWeek: _dayjs.weekdaysMin(),
+    monthNames: _dayjs.monthsShort(),
+    firstDay: _dayjs.localeData().firstDayOfWeek(),
   }
   constructor() { }
   ngOnInit() {

@@ -14,9 +14,14 @@
         "declaration": true,
         "sourceMap": false,
         "outDir": "dist",
-        "lib": ["es2018", "dom"],
+        "lib": [
+            "es2018",
+            "dom"
+        ],
         "baseUrl": "./",
-        "types": ["node"]
+        "types": [
+            "node"
+        ]
     },
     "angularCompilerOptions": {
         "fullTemplateTypeCheck": true,
@@ -27,6 +32,11 @@
         "strictInjectionParameters": true,
         "strictTemplates": true
     },
-    "include": ["src/**/*"],
-    "exclude": ["node_modules", "**/*.spec.ts"]
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts"
+    ]
 }
