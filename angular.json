@@ -100,7 +100,7 @@
                 }
             }
         },
-        "ngx-daterangepicker-material-e2e": {
+        "ngx-daterangepicker-material-dayjs-e2e": {
             "root": "demo/e2e",
             "sourceRoot": "demo/e2e",
             "projectType": "application",
@@ -109,7 +109,7 @@
                     "builder": "@angular-devkit/build-angular:protractor",
                     "options": {
                         "protractorConfig": "./protractor.conf.js",
-                        "devServerTarget": "ngx-daterangepicker-material:serve"
+                        "devServerTarget": "ngx-daterangepicker-material-dayjs:serve"
                     }
                 },
                 "lint": {
