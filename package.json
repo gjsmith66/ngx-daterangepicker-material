@@ -1,5 +1,5 @@
 {
-    "name": "ngx-daterangepicker-material",
+    "name": "ngx-daterangepicker-material-dayjs",
     "version": "4.0.1",
     "description": "Angular 9 and 10 date range picker (with material design theme)",
     "keywords": [
@@ -21,7 +21,7 @@
         "moment",
         "picker"
     ],
-    "homepage": "https://github.com/fetrarij/ngx-daterangepicker-material",
+    "homepage": "https://github.com/gjsmith66/ngx-daterangepicker-material-dayjs",
     "license": "MIT",
     "main": "dist/index.js",
     "typings": "dist/index.d.ts",
@@ -33,13 +33,13 @@
         "lint": "ng lint",
         "e2e": "ng e2e",
         "ngc": "./node_modules/.bin/ngc -p tsconfig.json",
-        "gh-pages": "ng build --prod --base-href=\"/ngx-daterangepicker-material/\" && ngh --dir demo/dist",
+        "gh-pages": "ng build --prod --base-href=\"/ngx-daterangepicker-material-dayjs/\" && ngh --dir demo/dist",
         "build": "ng-packagr -p package.json"
     },
-    "author": "Fetrarijaona R.",
+    "author": "Smith G.",
     "repository": {
         "type": "git",
-        "url": "https://github.com/fetrarij/ngx-daterangepicker-material.git"
+        "url": "https://github.com/gjsmith66/ngx-daterangepicker-material-dayjs.git"
     },
     "peerDependencies": {
         "dayjs": "^1.10.3"
@@ -84,10 +84,7 @@
     "$schema": "./node_modules/ng-packagr/package.schema.json",
     "ngPackage": {
         "lib": {
-            "entryFile": "src/daterangepicker/index.ts",
-            "umdModuleIds": {
-                "moment": "moment"
-            }
+            "entryFile": "src/daterangepicker/index.ts"
         },
         "dest": "dist"
     },
