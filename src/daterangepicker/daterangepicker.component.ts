@@ -1,6 +1,7 @@
 import { ChangeDetectorRef, Component, ElementRef, EventEmitter, forwardRef, Input, OnInit, Output, ViewChild, ViewEncapsulation } from '@angular/core';
 import { FormControl, NG_VALUE_ACCESSOR } from '@angular/forms';
-import * as dayjs from 'dayjs';
+import * as _dayjs from 'dayjs';
+const dayjs = _dayjs;
 
 import { LocaleConfig } from './daterangepicker.config';
 import { LocaleService } from './locale.service';
@@ -49,9 +50,9 @@ export class DaterangepickerComponent implements OnInit {
     sideEnum = SideEnum;
 
     @Input()
-    minDate: dayjs.Dayjs = null;
+    minDate: _dayjs.Dayjs = null;
     @Input()
-    maxDate: dayjs.Dayjs = null;
+    maxDate: _dayjs.Dayjs = null;
     @Input()
     autoApply: Boolean = false;
     @Input()
@@ -1136,7 +1137,7 @@ export class DaterangepickerComponent implements OnInit {
      * @param date the date to add time
      * @param side left or right
      */
-    private _getDateWithTime(date, side: SideEnum): dayjs.Dayjs {
+    private _getDateWithTime(date, side: SideEnum): _dayjs.Dayjs {
         if (!this.timepickerVariables[side]?.selectedHour) return date;
         let hour = parseInt(this.timepickerVariables[side].selectedHour, 10);
         if (!this.timePicker24Hour) {
