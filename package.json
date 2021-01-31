@@ -89,8 +89,5 @@
             "entryFile": "src/daterangepicker/index.ts"
         },
         "dest": "dist"
-    },
-    "dependencies": {
-        "tslib": "^1.90.0"
     }
 }
