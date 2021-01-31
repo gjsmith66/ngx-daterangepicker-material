@@ -1396,9 +1396,6 @@ var DaterangepickerComponent = /** @class */ (function () {
             this.endDate = this._getDateWithTime(this.startDate, SideEnum.right);
             this.calculateChosenLabel();
         }
-        else {
-            debugger;
-        }
         if (this.isInvalidDate && this.startDate && this.endDate) {
             // get if there are invalid date between range
             var d = this.startDate.clone();
@@ -2801,7 +2798,7 @@ var AppComponent = /** @class */ (function () {
     function AppComponent() {
     }
     AppComponent.ɵfac = function AppComponent_Factory(t) { return new (t || AppComponent)(); };
-    AppComponent.ɵcmp = i0.ɵɵdefineComponent({ type: AppComponent, selectors: [["ngx-root"]], decls: 25, vars: 12, consts: [["href", "//github.com/fetrarij/ngx-daterangepicker-material", 1, "hide-on-small-only", "hidden-xs"], ["src", "https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67", "alt", "Fork me on GitHub", "data-canonical-src", "https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png", 2, "position", "absolute", "top", "0", "right", "0", "border", "0", "z-index", "2000"], ["role", "navigation", 1, "light-blue", "lighten-1"], [1, "nav-wrapper", "container"], [1, "left", "hide-on-small-only"], ["routerLinkActive", "active"], [3, "routerLink"], [1, "container"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
+    AppComponent.ɵcmp = i0.ɵɵdefineComponent({ type: AppComponent, selectors: [["ngx-root"]], decls: 25, vars: 12, consts: [["href", "https://github.com/gjsmith66/ngx-daterangepicker-material-dayjs", 1, "hide-on-small-only", "hidden-xs"], ["src", "https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67", "alt", "Fork me on GitHub", "data-canonical-src", "https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png", 2, "position", "absolute", "top", "0", "right", "0", "border", "0", "z-index", "2000"], ["role", "navigation", 1, "light-blue", "lighten-1"], [1, "nav-wrapper", "container"], [1, "left", "hide-on-small-only"], ["routerLinkActive", "active"], [3, "routerLink"], [1, "container"]], template: function AppComponent_Template(rf, ctx) { if (rf & 1) {
             i0.ɵɵelementStart(0, "a", 0);
             i0.ɵɵelement(1, "img", 1);
             i0.ɵɵelementEnd();
