@@ -23,7 +23,7 @@ script:
     - ./node_modules/.bin/ng build --prod --base-href=/ngx-daterangepicker-material-dayjs/
 
 after_success:
-    - ./node_modules/.bin/ngh --dir demo/dist --repo=https://GH_TOKEN@github.com/fetrarij/ngx-daterangepicker-material.git
+    - ./node_modules/.bin/ngh --dir demo/dist --repo=https://GH_TOKEN@github.com/gjsmith66/ngx-daterangepicker-material-dayjs.git
 
 notifications:
     email:
