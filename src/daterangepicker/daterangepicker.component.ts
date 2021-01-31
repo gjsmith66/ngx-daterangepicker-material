@@ -753,6 +753,7 @@ export class DaterangepickerComponent implements OnInit {
      * @param side left or right
      */
     yearChanged(yearEvent: any, side: SideEnum) {
+        debugger;
         const month = this.calendarVariables[side].dropdowns.currentMonth;
         const year = parseInt(yearEvent.target.value, 10);
         this.monthOrYearChanged(month, year, side);
@@ -778,10 +779,10 @@ export class DaterangepickerComponent implements OnInit {
         }
 
         if (side === SideEnum.left) {
-            const start = this.startDate.clone();
-            start.hour(hour);
-            start.minute(minute);
-            start.second(second);
+            let start = this.startDate.clone();
+            start = start.hour(hour);
+            start = start.minute(minute);
+            start = start.second(second);
             this.setStartDate(start);
             if (this.singleDatePicker) {
                 this.endDate = this.startDate.clone();
@@ -797,10 +798,10 @@ export class DaterangepickerComponent implements OnInit {
                 }
             }
         } else if (this.endDate) {
-            const end = this.endDate.clone();
-            end.hour(hour);
-            end.minute(minute);
-            end.second(second);
+            let  end = this.endDate.clone();
+            end = end.hour(hour);
+            end = end.minute(minute);
+            end = end.second(second);
             this.setEndDate(end);
         }
 
@@ -847,12 +848,12 @@ export class DaterangepickerComponent implements OnInit {
         this.calendarVariables[side].dropdowns.currentYear = year;
         this.calendarVariables[side].dropdowns.currentMonth = month;
         if (isLeft) {
-            this.leftCalendar.month.month(month).year(year);
+            this.leftCalendar.month = this.leftCalendar.month.month(month).year(year);
             if (this.linkedCalendars) {
                 this.rightCalendar.month = this.leftCalendar.month.clone().add(1, 'month');
             }
         } else {
-            this.rightCalendar.month.month(month).year(year);
+            this.rightCalendar.month = this.rightCalendar.month.month(month).year(year);
             if (this.linkedCalendars) {
                 this.leftCalendar.month = this.rightCalendar.month.clone().subtract(1, 'month');
             }

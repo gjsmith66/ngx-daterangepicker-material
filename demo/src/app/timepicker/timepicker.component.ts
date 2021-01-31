@@ -10,8 +10,8 @@ export class TimepickerComponent implements OnInit {
   selected: {startDate: _dayjs.Dayjs, endDate: _dayjs.Dayjs};
   constructor() {
     this.selected = {
-      startDate: _dayjs('2015-11-18T00:00Z'),
-      endDate: _dayjs('2015-11-26T00:00Z')
+        startDate: _dayjs().subtract(3,'week').subtract(17,'hour'),
+        endDate: _dayjs().subtract(1,'week').subtract(3,'day').subtract(3,'hour')
     }
    }
 
