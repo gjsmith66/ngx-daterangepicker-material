@@ -706,9 +706,7 @@ export class DaterangepickerComponent implements OnInit {
         if (!this.singleDatePicker && this.startDate && !this.endDate?.isValid()) {
             this.endDate = this._getDateWithTime(this.startDate, SideEnum.right);
             this.calculateChosenLabel();
-        } else {
-            debugger;
-        }
+        } 
         if (this.isInvalidDate && this.startDate && this.endDate) {
             // get if there are invalid date between range
             let d = this.startDate.clone();
