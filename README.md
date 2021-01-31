@@ -2,8 +2,8 @@
 
 > Angular 2+ Date range picker.
 
-[![Build Status](https://travis-ci.org/fetrarij/ngx-daterangepicker-material.svg?branch=master)](https://travis-ci.org/fetrarij/ngx-daterangepicker-material)
-[![npm version](https://badge.fury.io/js/ngx-daterangepicker-material.svg)](https://badge.fury.io/js/ngx-daterangepicker-material-dayjs)
+[![Build Status](https://travis-ci.org/fetrarij/ngx-daterangepicker-material-dayjs.svg?branch=master)](https://travis-ci.org/fetrarij/ngx-daterangepicker-material)
+[![npm version](https://badge.fury.io/js/ngx-daterangepicker-material-dayjs.svg)](https://badge.fury.io/js/ngx-daterangepicker-material-dayjs)
 [![last commit](https://img.shields.io/github/last-commit/gjsmith66/ngx-daterangepicker-material.svg)](https://github.com/gjsmith66/ngx-daterangepicker-material-dayjs/commits/master)
 
 This was orginally writtem by fetrarij.  I have just updated to use dayjs instead of Moment.  While updating, I fixed a couple bugs along the way.
