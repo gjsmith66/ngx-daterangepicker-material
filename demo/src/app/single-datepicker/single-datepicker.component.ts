@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import * as _dayjs from 'dayjs';
+import 'dayjs/locale/fr';
 import { LocaleConfig } from '../../../../src/daterangepicker';
 // _dayjs.locale('fr', localization);
 import * as weekday from 'dayjs/plugin/weekday';
-_dayjs.extend(weekday)
+_dayjs.extend(weekday);
+_dayjs.locale('fr');
 
 @Component({
   selector: 'single-datepicker',

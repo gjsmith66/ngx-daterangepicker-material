@@ -99,7 +99,11 @@
                 },
                 "deploy": {
                     "builder": "angular-cli-ghpages:deploy",
-                    "options": {}
+                    "options": {
+                        "baseHref": "/ngx-daterangepicker-material-dayjs/",
+                        "name": "gjsmith66",
+                        "email": "gjsmith66@gmail.com"
+                    }
                 }
             }
         },

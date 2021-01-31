@@ -20,9 +20,7 @@ Demo: https://gjsmith66.github.io/ngx-daterangepicker-material-dayjs/
 
 | Angular| ngx-daterangepicker-material|
 | ------|:------:| 
-| >=9.0.0  | v4.x.x |
-| <9.0.0  | v2.x.x |
-| ~~>=9.0.0 depends on @angular/material~~ |~~v3.x~~ |
+| >=11.0.0  | v4.0.6 |
 
 ---
 
