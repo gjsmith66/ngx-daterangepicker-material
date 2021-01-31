@@ -4,3 +4,6 @@ cd dist
 npm publish
 npx ng build --base-href "/ngx-daterangepicker-material-dayjs/"
 npx ngh --dir demo/dist
+
+
+Which is npm run gh-pages

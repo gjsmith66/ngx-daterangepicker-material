@@ -62,7 +62,7 @@
         "@types/jasmine": "~3.6.0",
         "@types/jasminewd2": "~2.0.3",
         "@types/node": "^12.11.1",
-        "angular-cli-ghpages": "^0.5.3",
+        "angular-cli-ghpages": "^1.0.0-rc.1",
         "codelyzer": "^6.0.0",
         "core-js": "^2.5.4",
         "dayjs": "^1.10.4",
