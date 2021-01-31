@@ -1,6 +1,6 @@
 {
     "name": "ngx-daterangepicker-material-dayjs",
-    "version": "4.0.6",
+    "version": "4.0.7",
     "description": "Angular 11 date range picker (with material design theme)",
     "keywords": [
         "angular2",
