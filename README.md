@@ -81,7 +81,7 @@ Typescript:
 ````typescript
 selected: {start: Moment, end: Moment};
 ````
-You can [play with our online demo here](https://fetrarij.github.io/ngx-daterangepicker-material/)
+You can [play with our online demo here](https://gjsmith66.github.io/ngx-daterangepicker-material-dayjs/)
 and [browse our demo code here](./demo/src/app).
 
 ## Inline usage
