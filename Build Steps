@@ -7,3 +7,4 @@ npx ngh --dir demo/dist
 
 
 Which is npm run gh-pages
+ng deploy --base-href "/ngx-daterangepicker-material-dayjs/"
