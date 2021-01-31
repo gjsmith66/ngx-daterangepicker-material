@@ -12,7 +12,7 @@ This `Angular Material` plugin is compatible with Angular 2+ and is Ivy compatib
 
 ![](screen.png)
 
-Demo: https://fetrarij.github.io/ngx-daterangepicker-material/
+Demo: https://gjsmith66.github.io/ngx-daterangepicker-material-dayjs/
 
 ---
 
@@ -289,5 +289,5 @@ Open `http//:localhost:4200` on your browser.
 Run `npm test` or `ng test` to run tests.
 
 
-## [License](https://github.com/fetrarij/ngx-daterangepicker-material/blob/master/LICENSE)
+## [License](https://github.com/gjsmith66/ngx-daterangepicker-material-dayjs/blob/master/LICENSE)
 MIT
